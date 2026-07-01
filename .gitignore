@@ -1,13 +1,11 @@
 # Python
 backend/venv/
-__pycache__/
-*.pyc
-
-# Environment
 backend/.env
-
-# Media uploads
 backend/media/
+
+# Python cache
+__pycache__/
+*.py[cod]
 
 # Database
 *.sqlite3
@@ -18,6 +16,6 @@ frontend/node_modules/
 # VS Code
 .vscode/
 
-# OS files
+# OS
 .DS_Store
 Thumbs.db
