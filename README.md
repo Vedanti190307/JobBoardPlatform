@@ -1,37 +1,87 @@
-# JobBoard Platform
+# 🚀 JobBoard Platform
 
-A Full Stack Job Board Platform built using React, Django REST Framework and SQLite.
+A Full Stack Job Board Platform built using **React**, **Django REST Framework**, **PostgreSQL**, **JWT Authentication**, and **Tailwind CSS**. The platform allows employers to post jobs and job seekers to browse and apply for jobs with resume uploads.
 
-## Features
+---
 
-- User Registration
-- User Login (JWT Authentication)
-- Create Job
-- View Jobs
-- Apply for Jobs
-- Resume Upload
-- Dashboard
-- My Applications
+# ✨ Features
 
-## Tech Stack
+- 👤 User Registration
+- 🔐 JWT Authentication (Login)
+- 📋 Dashboard
+- 💼 Create Job
+- 🔍 View Available Jobs
+- 📄 Apply for Jobs
+- 📎 Resume Upload
+- 📑 My Applications
+- 🗄 PostgreSQL Database
+- 🌐 REST API
 
-Frontend
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
 - React
 - Vite
 - Tailwind CSS
 - Axios
+- React Router DOM
 
-Backend
+## Backend
+
 - Django
 - Django REST Framework
-- JWT Authentication
+- Simple JWT
 
-Database
-- SQLite
+## Database
 
-## Installation
+- PostgreSQL
 
-### Backend
+---
+
+# 📁 Project Structure
+
+```text
+JobBoardPlatform/
+│
+├── backend/
+│   ├── applications/
+│   ├── jobs/
+│   ├── users/
+│   ├── jobboard/
+│   ├── media/
+│   ├── manage.py
+│   └── .env.example
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
+│
+├── screenshots/
+│
+├── README.md
+└── .gitignore
+```
+
+---
+
+# 🚀 Installation
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/Vedanti190307/JobBoardPlatform.git
+
+cd JobBoardPlatform
+```
+
+---
+
+## 2️⃣ Backend Setup
 
 ```bash
 cd backend
@@ -47,7 +97,15 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-### Frontend
+Backend runs on:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## 3️⃣ Frontend Setup
 
 ```bash
 cd frontend
@@ -57,26 +115,86 @@ npm install
 npm run dev
 ```
 
-Frontend runs at
+Frontend runs on:
 
 ```
 http://localhost:5173
 ```
 
-Backend runs at
+---
 
-```
-http://127.0.0.1:8000
-```
+# 📸 Screenshots
 
-## Screenshots
+## 🏠 Home
 
-- Home
-- Login
-- Jobs
-- Apply Job
-- Dashboard
+![Home](screenshots/home.png)
 
-## Author
+---
 
-Vedanti Pawar
+## 🔑 Login
+
+![Login](screenshots/login.png)
+
+---
+
+## 📝 Register
+
+![Register](screenshots/register.png)
+
+---
+
+## 💼 Jobs
+
+![Jobs](screenshots/jobs.png)
+
+---
+
+## ➕ Create Job
+
+![Create Job](screenshots/create-job.png)
+
+---
+
+## 📄 Apply Job
+
+![Apply Job](screenshots/apply.png)
+
+---
+
+## 📋 My Applications
+
+![My Applications](screenshots/applications.png)
+
+---
+
+## 📊 Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+# 📌 REST API Endpoints
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| POST | `/api/users/register/` | Register User |
+| POST | `/api/login/` | Login |
+| GET | `/api/jobs/` | View Jobs |
+| POST | `/api/jobs/` | Create Job |
+| POST | `/api/applications/` | Apply for Job |
+| GET | `/api/users/dashboard/` | Dashboard |
+| GET | `/api/applications/` | My Applications |
+
+---
+
+# 👩‍💻 Author
+
+**Vedanti Pawar**
+
+- GitHub: https://github.com/Vedanti190307
+
+---
+
+# ⭐ If you like this project
+
+Please consider giving it a ⭐ on GitHub.
